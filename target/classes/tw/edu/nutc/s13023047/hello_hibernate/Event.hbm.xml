@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017/6/13 ?U?? 01:30:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="tw.edu.nutc.s13023047.hello_hibernate.Event" table="EVENTS">
+  <id name="id" type="long">
+   <column name="EVENT_ID"/>
+   <generator class="increment"/>
+  </id>
+  <property generated="never" lazy="false" name="title" type="java.lang.String">
+   <column name="TITLE"/>
+  </property>
+  <property generated="never" lazy="false" name="date" type="java.util.Date">
+   <column name="DATE"/>
+  </property>
+ </class>
+</hibernate-mapping>
